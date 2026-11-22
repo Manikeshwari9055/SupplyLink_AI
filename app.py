@@ -108,7 +108,7 @@ def get_gemini_response(prompt):
     start_time = time.perf_counter()
 
     response = client.models.generate_content(
-        model="gemini-3.8-flash",
+        model="gemini-3.6-flash",
         contents=prompt,
         config={
             "max_output_tokens": 300,
